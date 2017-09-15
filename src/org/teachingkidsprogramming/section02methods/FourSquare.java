@@ -17,7 +17,6 @@ public class FourSquare
     //      ------------- Recipe for drawSquare --#6.2
     for (int i = 0; i < 4; i++)
     {
-      
       ColorWheel.addColor(Reds.Crimson);
       ColorWheel.addColor(Blues.Blue);
       ColorWheel.addColor(Greens.Chartreuse);
