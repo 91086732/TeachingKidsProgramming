@@ -20,17 +20,13 @@ public class ChooseYourOwnAdventure
     String action = askAQuestion("Do you want to 'wake up' or 'explore' the dream?");
     if ("wake up".equalsIgnoreCase(action))
     {
-      //          wakeUp (recipe below) --#2.1
-      //          ------------- Recipe for wakeUp --#2.2
-      //              Tell the user "You wake up and have a boring day. The end." --#1
-      //          ------------- End of wakeUp recipe --#2.3
+      wakeUp();
     }
     else if ("explore".equalsIgnoreCase(action))
     {
-      //      approachOoze (recipe below) --#4.1
-      //      ------------- Recipe for approachOoze --#4.2
-      //         Tell the user "You approach a glowing, green bucket of ooze. Worried that you will get in trouble, you pick up the bucket." --#3
+      approachOoz();
       //         Ask the user "Do you want to pour the ooze into the 'backyard' or 'toilet'?" --#7
+      String actionTwo = askAQuestion("Do you want to pour the ooze into the 'backyard' or 'toilet'?");
       //         If they answer "toilet" --#8.1
       //            pourIntoToilet (recipe below) --#12.1
       //            ------------- Recipe for pourIntoToilet --#12.2
@@ -57,15 +53,24 @@ public class ChooseYourOwnAdventure
       //         ------------- End of pourIntoBackyard recipe --#19.3
       //         Otherwise, if they answer anything else --#8.3
       //            endStory --#9
-      //      ------------- End of approachOoze recipe --#4.3
     }
     else
     {
-      //      endStory (recipe below) --#6.1
-      //      ------------- Recipe for endStory --#6.2
-      //         Tell the user "You don't know how to read directions. You can't play this game. The end." --#5
-      //      ------------- End of endStory recipe --#6.3
+      endStory();
     }
+  }
+  private static void endStory()
+  {
+    tellMoreStory("You don't know how to read directions. You can't play this game. The end.");
+  }
+  private static void approachOoz()
+  {
+    tellMoreStory(
+        "You approach a glowing, green bucket of ooze. Worried that you will get in trouble, you pick up the bucket.");
+  }
+  private static void wakeUp()
+  {
+    tellMoreStory("You wake up and have a boring day. The end.");
   }
   private static void animateStartStory()
   {
