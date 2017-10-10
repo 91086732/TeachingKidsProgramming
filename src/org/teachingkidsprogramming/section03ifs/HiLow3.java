@@ -37,7 +37,7 @@ public class HiLow3
       {
         MessageBox.showMessage("Too Low.");
       }
-      if (i == 8)
+      if (i == 1)
       {
         MessageBox.showMessage("You Lost!!!");
       }
