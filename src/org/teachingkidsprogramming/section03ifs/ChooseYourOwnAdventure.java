@@ -30,7 +30,7 @@ public class ChooseYourOwnAdventure
     {
       //      endStory (recipe below) --#6.1
       //      ------------- Recipe for endStory --#6.2
-      //         Tell the user "You don't know how to read directions. You can't play this game. The end." --#5
+      MessageBox.showMessage("You don't know how to read directions. You can't play this game. The end.");
       //      ------------- End of endStory recipe --#6.3
     }
   }
