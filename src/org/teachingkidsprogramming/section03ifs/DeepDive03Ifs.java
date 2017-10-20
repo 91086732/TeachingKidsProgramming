@@ -17,10 +17,10 @@ public class DeepDive03Ifs
   @Test
   public void doesABear() throws Exception
   {
-    String bearPoopPlace = "";
+    String bearPoopPlace = "woods";
     if (true)
     {
-      bearPoopPlace = ___;
+      bearPoopPlace = "woods";
     }
     Assert.assertEquals("woods", bearPoopPlace);
   }
@@ -32,13 +32,13 @@ public class DeepDive03Ifs
     {
       dessert = "ketchup";
     }
-    Assert.assertEquals(___, dessert);
+    Assert.assertEquals("chocolate", dessert);
   }
   @Test
   public void notEverEverEver() throws Exception
   {
     String dessert = "chocolate";
-    if (!_____)
+    if (!true)
     {
       dessert = "ketchup";
     }
@@ -47,8 +47,8 @@ public class DeepDive03Ifs
   @Test
   public void isThePopeCatholic() throws Exception
   {
-    String pope = "";
-    if (_____)
+    String pope = "Cathoilc";
+    if (true)
     {
       pope = "Catholic";
     }
@@ -58,7 +58,7 @@ public class DeepDive03Ifs
   public void trueOrFalse() throws Exception
   {
     String animal = "cat";
-    boolean elephant = _____;
+    boolean elephant = true;
     if (elephant)
     {
       animal = "flat " + animal;
