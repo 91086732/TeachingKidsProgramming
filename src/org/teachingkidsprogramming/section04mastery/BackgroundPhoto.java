@@ -15,7 +15,7 @@ public class BackgroundPhoto
     int side = 2;
     for (int i = 0; i < 75; i++)
     {
-      java.awt.Color currColor = PenColors.Yellows.Yellow;
+      java.awt.Color currColor = PenColors.Yellows.Gold;
       Tortoise.setPenColor(currColor);
       side++;
       Tortoise.move(side);
