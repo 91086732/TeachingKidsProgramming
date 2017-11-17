@@ -21,15 +21,7 @@ public class SpiderWeb
     //        Do the following 6 times --#5.1
     //            drawTriangle (recipe below) --#4.1
     //
-    //            ------------- Recipe for drawTriangle --#4.2
-    //            Do the following 3 times --#3.1
-    for (int i = 0; i < 3; i++)
-    {
-      Tortoise.move(length);
-      Tortoise.turn(360 / 3);
-      //            End Repeat --#3.2
-    }
-    //            ------------- End of drawTriangle recipe --#4.3
+    drawTriangle(length);
     //
     //            Turn the tortoise 1/6th of 360 degrees to the right --#7
     //            Increase the current length (of the line) by the current zoom --#8.1
@@ -38,5 +30,13 @@ public class SpiderWeb
     //
     //        Change the current zoom so it is multiplied by 1.3 --#11
     //    End Repeat --#10.2
+  }
+  private static void drawTriangle(double length)
+  {
+    for (int i = 0; i < 3; i++)
+    {
+      Tortoise.move(length);
+      Tortoise.turn(360 / 3);
+    }
   }
 }

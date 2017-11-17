@@ -136,6 +136,13 @@ public class DeepDive04Mastery
     Assert.assertEquals(theAnswer.getClass(), ______.class);
     Assert.assertEquals(theAnswer, ____);
   }
+  @Test
+  public void extraSauce() throws Exception
+  {
+    String extra = "56";
+    Number notTheAnswer = Integer.parseInt(extra);
+    Assert.assertEquals(notTheAnswer.getClass(), Integer.class);
+  }
   /**
    * Ignore the following, It's needed to run the deep dive
    * 

@@ -15,7 +15,12 @@ public class TurtleTree
     Tortoise.setSpeed(10);
     Tortoise.getBackgroundWindow().setBackground(PenColors.Grays.Black);
     int length = 60;
-    drawBranch(length);
+    for (int i = 0; i < 20; i++)
+    {
+      drawBranch(length);
+      Tortoise.turn(180);
+      Tortoise.turn(87);
+    }
   }
   private static void drawBranch(int length)
   {
