@@ -3,8 +3,6 @@ package org.teachingkidsprogramming.section04mastery;
 import org.junit.Assert;
 import org.junit.Test;
 
-import you.need.to.fill.in.the.______;
-
 @SuppressWarnings("unused")
 public class DeepDive04Mastery
 {
@@ -133,8 +131,8 @@ public class DeepDive04Mastery
   {
     String text = "42";
     Number theAnswer = Double.parseDouble(text);
-    Assert.assertEquals(theAnswer.getClass(), ______.class);
-    Assert.assertEquals(theAnswer, ____);
+    Assert.assertEquals(theAnswer.getClass(), String.class);
+    Assert.assertEquals(theAnswer, "42");
   }
   @Test
   public void extraSauce() throws Exception
