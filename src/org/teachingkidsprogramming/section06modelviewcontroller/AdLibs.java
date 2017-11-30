@@ -15,11 +15,11 @@ public class AdLibs
     //  Set the value of the currentStory to the word "Today " --#1.2
     String currentStory = "Today ";
     //  Add the words "I woke " + currentAdverb + ". " to the currentStory --#3
-    currentStory = "I woke " + currentAdverb + ". ";
+    currentStory = currentStory + "I woke " + currentAdverb + ". ";
     //  Add the words '"Then I " + currentEdVerb + " " to the currentStory --#5
-    currentStory = "Then I " + currentEdVerb + ". ";
+    currentStory = currentStory + "Then I " + currentEdVerb + " ";
     //  Add the words "my " + currentBodyPart + ". " to the current story --#7
-    currentStory = "my " + currentBodyPart + ". ";
+    currentStory = currentStory + "my " + currentBodyPart + ". ";
     //  Show the currentStory in a message box as a message --#1.1
     MessageBox.showMessage(currentStory);
   }

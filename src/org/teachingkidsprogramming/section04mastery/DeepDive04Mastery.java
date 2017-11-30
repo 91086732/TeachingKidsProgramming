@@ -115,7 +115,7 @@ public class DeepDive04Mastery
   public void dividingIntegers() throws Exception
   {
     Number number = 11 / 5;
-    Assert.assertEquals(number.getClass(), Integer.class);
+    Assert.assertEquals(number.getClass(), Double.class);
     Assert.assertEquals(number, 2.2);
   }
   @Test
@@ -123,8 +123,8 @@ public class DeepDive04Mastery
   {
     String text = "42";
     Number theAnswer = Integer.parseInt(text);
-    Assert.assertEquals(theAnswer.getClass(), Integer.class);
-    Assert.assertEquals(theAnswer, text);
+    Assert.assertEquals(theAnswer.getClass(), Double.class);
+    Assert.assertEquals(theAnswer, "42");
   }
   @Test
   public void understandingDoubleNumbers() throws Exception
